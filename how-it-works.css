@@ -1,11 +1,100 @@
-/*universal selector*/
+/*
+Universal Selector
+    Everything will be PURPLE
+*/
 
-* {
-    color: aliceblue;
+* {color: purple;}
+
+
+
+
+/*
+Element Selector
+    <div>text</div> - every DIV will be green
+*/
+
+div {color: green;}
+
+
+
+
+/*
+Class Selector
+    <div class="alert-text second-class">text</div> - will be ORANGE
+    <div class="ye">r</div>
+*/
+
+.alert-text {color: orange;}
+
+
+
+
+/*
+ID Selector.
+ID is unique and can be used only once on page
+    <div id="title">title</div>
+    <p id="title">not title</div> - is error
+*/
+
+#title {text-align: center;}
+
+
+
+
+/*
+Groupinig Selectors
+in case we have several classes we can do this
+*/
+
+.first-class,
+.second-class {background-color: blue;}
+
+
+
+
+/*
+Chaining Selectors
+in case we need to specify selection in simmular
+    <div class="subsection header">Header</div> - will be RED
+    <p class="subsection preview">Preview</div>
+    <p class="subsection" id="preview">lol</div> - will be AQUA 
+*/
+
+.subsection.header {color: red;}
+
+.subsection#preview {color: aqua;}
+
+
+
+/*
+Descendant Combinator
+affect the last written class if nested insive elements thst have previous classes
+    <div class="one">1
+        <div class="two">2
+            <div class="three">3</div> - lime
+            <div class="four three">4</div> - lime because of class three
+        </div>
+        <div class="three">3</div> - lime
+    </div>
+*/
+
+.one .three {color: lime;}
+
+
+
+
+
+
+/*Basics*/
+p {
+    color: #555;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
 }
 
-/*type-element selector*/
-
-div {
-    color: red;
+img {
+    height: auto;
+    width: 160px;
 }
