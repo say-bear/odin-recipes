@@ -1,0 +1,11 @@
+/*universal selector*/
+
+* {
+    color: aliceblue;
+}
+
+/*type-element selector*/
+
+div {
+    color: red;
+}
